@@ -6,7 +6,7 @@ Version: 1.0.0
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
-2. Reset
+2. Reset - Custom Font from user
 3. Global
 4. Content Elements 
 5. Main Header / Two / Three 
@@ -69,6 +69,8 @@ Version: 1.0.0
 	font-family: 'Leckerli One', cursive;
 */
 
+
+
 @import url('flaticon.css');
 @import url('fontawesome-all.css');
 @import url('animate.css');
@@ -94,6 +96,27 @@ Version: 1.0.0
 	font-size: 100%;
 }
 
+
+/***  
+
+====================================================================
+		Custom Font from user
+====================================================================
+
+***/
+
+@font-face {
+	font-family: 'Satoshi';
+	src: url('../fonts/Satoshi-Regular.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Muthiara';
+	src: url('../fonts/Muthiara.otf') format('truetype');
+}
+
+
+
 /*** 
 
 ====================================================================
@@ -114,7 +137,7 @@ body {
 	font-family: 'ABeeZee', sans-serif;
 }
 
-a{
+a {
 	text-decoration:none;
 	cursor:pointer;
 	color:#5fcac7;
