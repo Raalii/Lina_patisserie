@@ -2018,7 +2018,7 @@ hr {
   height: 50px;
   line-height: 46px;
   font-size: 32px;
-  color: #ff91a4;
+  color: #331E38;
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
@@ -2042,7 +2042,7 @@ hr {
   z-index: -1;
   stroke-width: 12px;
   fill: transparent;
-  stroke: #ff91a4;
+  stroke: #331E38;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -2051,7 +2051,7 @@ hr {
 }
 
 .scroll-to-top:hover svg {
-  fill: #ff91a4;
+  fill: #331E38;
 }
 
 /*** 
@@ -5973,7 +5973,7 @@ blockquote:after {
 }
 
 .features-section.style-two .overlay {
-  background-color: rgba(249, 129, 147, 0.8);
+  background-color: #F2B880;
 }
 
 .features-section.style-two .sec-title {
@@ -6113,7 +6113,7 @@ blockquote:after {
   display: block;
   height: 80px;
   width: 80px;
-  border-radius: 50%;
+  border-radius: 17%;
   font-size: 50px;
   line-height: 74px;
   color: #362039;
@@ -8927,7 +8927,7 @@ iframe#gmap_canvas {
 }
 
 .main-footer .shape_wrapper .overlay {
-  background-color: rgba(75, 67, 66, 0.9);
+  background-color: #F2B880;
 }
 
 .main-footer .widgets-section {
@@ -9155,7 +9155,7 @@ iframe#gmap_canvas {
   -webkit-mask-position: top;
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #618985;
   color: #ffffff;
   padding: 30px 0;
   padding-top: 50px;
