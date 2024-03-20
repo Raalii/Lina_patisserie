@@ -44,6 +44,12 @@
     ><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
   </head>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("2xcaJztI8A8_ODzMu"); // Remplacez par votre User ID
+    })();
+  </script>
 
   <body>
     <div class="page-wrapper">
@@ -730,7 +736,7 @@ Chez Lina, l'artisanat allie délicatesse et souci du détail, honorant la tradi
             class="shape_inner"
             style="background-image: url(https://via.placeholder.com/1920x900)"
           >
-          <img style="background-image" src="images/ilu/bread-534963_1920.jpg" alt="">
+          <img class="background-image" src="images/ilu/bread-534963_1920.jpg" alt="" />
             <div class="overlay"></div>
           </div>
         </div>
@@ -754,7 +760,7 @@ Chez Lina, l'artisanat allie délicatesse et souci du détail, honorant la tradi
                 <div class="form-group">
                   <input
                     type="text"
-                    name="username"
+                    name="nom"
                     class="username"
                     placeholder="Votre Nom *"
                   />
@@ -770,9 +776,20 @@ Chez Lina, l'artisanat allie délicatesse et souci du détail, honorant la tradi
                 </div>
 
                 <div class="form-group">
+                  <input
+                    type="hidden"
+                    name="phone"
+                    class="email"
+                    value="0622876337"
+                  />
+                </div>
+
+                <div class="form-group">
                   <textarea
                     name="contact_message"
                     placeholder="Votre message"
+                    name="comment"
+                    required
                   ></textarea>
                 </div>
 
@@ -810,7 +827,7 @@ Chez Lina, l'artisanat allie délicatesse et souci du détail, honorant la tradi
         <div class="shape_wrapper shape_five">
           <div
             class="shape_inner"
-            style="background-image"
+            class="background-image"
             
           >
           
@@ -854,6 +871,22 @@ Chez Lina, l'artisanat allie délicatesse et souci du détail, honorant la tradi
       <span class="fa fa-angle-up"></span>
     </div>
 
+<!-- 
+    <script type="text/javascript">
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_pi1lzem', 'template_v0av55w', this)
+          .then(function() {
+            console.log('SUCCESS!');
+            alert("Votre mail a bien été envoyé !");
+          }, function(error) {
+            console.log('FAILED...', error);
+            alert("Une erreur est survenue");
+          });
+      });
+    </script> -->
+
+    
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

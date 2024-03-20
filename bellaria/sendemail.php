@@ -7,7 +7,7 @@
 	$message = isset( $_POST['contact_message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['contact_message'] ) : "";
 	
 	//Headers
-	$to = ""; // Your email address goes here
+	$to = "rayane.ainseba92@gmail.com"; // Your email address goes here
     $subject = 'Contact Us';
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
@@ -21,7 +21,7 @@
     $send_email = mail($to, $subject, $message, $headers);
       
     echo ($send_email) ? '<div class="success">Email has been sent successfully.</div>' : 'Error sending. Please try again later.';
-}
+}	
 else
 {
 	echo '<div class="failed">Error: Faild to send. Please try again later.</div>';
